@@ -15,6 +15,12 @@ General docker informations and commands
 [Linuxserver](https://fleet.linuxserver.io/)  
 [Get docker](https://github.com/docker/docker-install)  
 
+## Related video tutorials
+[Watchtower - update containers automatically](https://www.youtube.com/watch?v=EqEA8W4lKpo)  
+[Portainer - A docker web GUI](https://www.youtube.com/watch?v=ccHhQJUcO2U)  
+[All my docker tutorials](https://www.youtube.com/playlist?list=PLU73OWQhDzsSyobL6E7McIGKYdR_hV6vR)  
+
+
 ## Install docker script:
 ```shell
 wget -qO- https://get.docker.com/ | sh
