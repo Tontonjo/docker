@@ -21,5 +21,32 @@ wget -qO- https://get.docker.com/ | sh
 ```
 
 ## Usefull commands:
-
+### Get docker general infos (docker root)
+```shell
+docker info
+```
+### Get infos about all containers
+```shell
+docker stats --all
+```
+### Get into a container
+```shell
+docker exec -it $containername bash
+```
+### Execute ping from a container directly
+```shell
+docker exec $containername ping 8.8.8.8
+```
+### Start a stopped container
+```shell
+docker start $containername
+```
+### Stop a started container
+```shell
+docker stop $containername
+```
+### Remove a stopped container
+```shell
+docker rm $containername
+```
 
