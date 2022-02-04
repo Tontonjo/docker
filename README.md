@@ -21,7 +21,7 @@ General docker informations and commands
 [All my docker tutorials](https://www.youtube.com/playlist?list=PLU73OWQhDzsSyobL6E7McIGKYdR_hV6vR)  
 
 
-## Install docker script:
+## Install docker script (run as root or sudo):
 ```shell
 wget -qO- https://get.docker.com/ | sh
 ```
