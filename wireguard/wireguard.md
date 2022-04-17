@@ -1,5 +1,6 @@
 # Wireguard
 
+```ssh
 docker run -d \
   --name=wireguard \
   --cap-add=NET_ADMIN \
@@ -20,3 +21,4 @@ docker run -d \
   --sysctl="net.ipv4.conf.all.src_valid_mark=1" \
   --restart unless-stopped \
   lscr.io/linuxserver/wireguard
+```
