@@ -16,7 +16,7 @@ docker run -d \
   -e TZ=Europe/London \
   -e SERVERURL=wireguard.domain.com `#set auto, fqdn or IP` \
   -e SERVERPORT=51820 `#optional` \
-  -e PEERS=1 `#can be usernames as user1,user2` \ 
+  -e PEERS=1 `#can be usernames as user1,user2` \
   -e PEERDNS=auto `#can define remote DNS like 10.0.0.1 and set search domain 10.0.0.1,local.domain.tld` \
   -e INTERNAL_SUBNET=10.13.13.0 `#optional` \
   -e ALLOWEDIPS=0.0.0.0/0 `# 0.0.0.0/0 means tunnel all - 10.0.0.0/24` \
