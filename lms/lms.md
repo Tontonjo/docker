@@ -1,4 +1,4 @@
-docker run -it \
+```docker run -it \
       --name lms \
       --restart unless-stopped \
       -v /path/to/config:"/config":rw \
@@ -11,3 +11,4 @@ docker run -it \
       -p 3483:3483/tcp \
       -p 3483:3483/udp \
       lmscommunity/logitechmediaserver
+```
