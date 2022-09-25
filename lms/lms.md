@@ -1,4 +1,5 @@
-# Start Container
+# Logitech Media Server - Squeezelite
+## Start Container
 https://hub.docker.com/r/lmscommunity/logitechmediaserver
 
 ```ssh
@@ -16,7 +17,7 @@ docker run -d \
       -p 3483:3483/udp \
       lmscommunity/logitechmediaserver
 ```
-# Install LMS Client - Squeezlite
+## Install LMS Client - Squeezlite
 https://sourceforge.net/projects/lmsclients/files/squeezelite/linux/
 
 ```ssh
