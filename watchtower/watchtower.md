@@ -2,11 +2,12 @@
 # Join me on Youtube: https://www.youtube.com/c/TontonJo
 
 # Sources
-# https://github.com/containrrr/watchtower
-# https://containrrr.dev/watchtower/
+https://github.com/containrrr/watchtower
+ https://containrrr.dev/watchtower/
 
 # list of arguments: 
-# https://containrrr.dev/watchtower/arguments/
+ https://containrrr.dev/watchtower/arguments/
+ https://github.com/containrrr/watchtower
 
 # All containers, purge, at defined time
 docker run -d \
