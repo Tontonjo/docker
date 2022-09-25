@@ -1,5 +1,5 @@
 ```ssh
-docker run -it \
+docker run -d \
       --name lms \
       --restart unless-stopped \
       -v /path/to/config:"/config":rw \
