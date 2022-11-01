@@ -1,6 +1,8 @@
 hbbs - RustDesk ID/Rendezvous server
 hbbr - RustDesk relay server
 
+Redirect ports 21117 to 21119 tcp/udp to host
+
 ```shell
 docker run -d \
 --restart unless-stopped \
