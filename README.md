@@ -58,3 +58,11 @@ docker rm $containername
 ```shell
 docker run --rm -v /var/run/docker.sock:/var/run/docker.sock containrrr/watchtower --run-once $containername
 ```
+## Statistics:  
+### Total RAM USED: 
+source: https://stackoverflow.com/questions/47818470/compute-the-total-memory-used-by-docker-containers-in-bash
+```shell
+docker stats --no-stream --format 'table {{.MemUsage}}' | sed 's/\.\([0-9]*\)GiB/\1MiB/g' | sed 's/[A-Za-z]*//g' | awk '{sum += $1} END {print sum "MB"}'
+```
+
+
