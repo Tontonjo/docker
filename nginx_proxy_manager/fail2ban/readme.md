@@ -7,9 +7,9 @@
 ### Support my work, give a thanks and help the youtube channel:
 [Link-tree](https://linktr.ee/tontonjo)  
 ## Sources:  
-https://nginxproxymanager.com/
-https://github.com/NginxProxyManager/nginx-proxy-manager/issues/39
-https://forum.openmediavault.org/index.php?thread/49562-nginx-proxy-manager-with-fail2ban-guide/
+https://nginxproxymanager.com/  
+https://github.com/NginxProxyManager/nginx-proxy-manager/issues/39  
+https://forum.openmediavault.org/index.php?thread/49562-nginx-proxy-manager-with-fail2ban-guide/  
 
 ## Preparation
 In order to have a reliable fail2ban configurations some adaptations to your container are needed.
