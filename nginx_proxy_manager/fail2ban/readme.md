@@ -5,7 +5,7 @@
 [![Youtube](https://badgen.net/badge/Youtube/Subscribe)](http://youtube.com/channel/UCnED3K6K5FDUp-x_8rwpsZw?sub_confirmation=1)
 [![Discord Tonton Jo](https://badgen.net/discord/members/h6UcpwfGuJ?label=Discord%20Tonton%20Jo%20&icon=discord)](https://discord.gg/h6UcpwfGuJ)
 ### Support my work, give a thanks and help the youtube channel:
-[![Link-tree](https://linktr.ee/tontonjo)  
+[Link-tree](https://linktr.ee/tontonjo)  
 ## Sources:  
 https://nginxproxymanager.com/
 https://github.com/NginxProxyManager/nginx-proxy-manager/issues/39
