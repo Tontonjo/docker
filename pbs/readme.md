@@ -22,9 +22,5 @@ docker run -d \
   ayufan/proxmox-backup-server:latest
 ```
 ## 2 - Login using PBS realm:
+https://yourhost:8007
 admin:pbspbs
-
-## 2 - Change the password:
-```ssh
-docker exec -it pbs passwd
-```
