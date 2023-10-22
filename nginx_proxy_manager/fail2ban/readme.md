@@ -59,17 +59,17 @@ service fail2ban start
 ## Management
 ### List jails
 ```ssh
-fail2ban client status
+fail2ban-client status
 ```
 ### List jails details
 ```ssh
-fail2ban client status npm-docker
+fail2ban-client status npm-docker
 ```
 ### Ban an IP
 ```ssh
-fail2ban client set npm-docker banip $anip
+fail2ban-client set npm-docker banip $anip
 ```
 ### Unban an IP
 ```ssh
-fail2ban client set npm-docker unbanip $anip
+fail2ban-client set npm-docker unbanip $anip
 ```
