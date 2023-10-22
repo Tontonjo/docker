@@ -1,0 +1,10 @@
+[npm-docker]
+enabled = true
+ignoreip = 127.0.0.1/8 192.168.0.0/16 172.16.0.1/12 10.0.0.0/8
+chain = INPUT
+logpath = /data/logs/default-host_*.log
+          /data/logs/proxy-host-*.log
+maxretry = 3
+bantime  = 24192000
+findtime = 86400
+filter = npm-docker
