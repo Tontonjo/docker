@@ -13,6 +13,9 @@ https://forum.openmediavault.org/index.php?thread/49562-nginx-proxy-manager-with
 
 ## Preparation
 In order to have a reliable fail2ban configurations some adaptations to your container are needed.
+- If you recreate the container (changes to container settings) you'll have to reinstall fail2ban manually. Configurations will be retained if you follow my advices here.
+- I'd suggest you to remove npm from being automatically updated
+
 Edit your container configuration to set the following:
 
 - Enable the net_admin capability in your container
