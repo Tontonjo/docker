@@ -73,3 +73,8 @@ fail2ban-client set npm-docker banip $anip
 ```ssh
 fail2ban-client set npm-docker unbanip $anip
 ```
+### Find when an IP was banned and infos about it
+```ssh
+sqlite3 -header -column 'file:/var/lib/fail2ban/fail2ban.sqlite3?mode=ro' "select * from bans where jail='npm-docker' AND ip='$ipaddress' order by timeofban desc limit 10"
+```
+
