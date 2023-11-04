@@ -14,10 +14,10 @@ docker run -d \
   --tmpfs=/run \
   -e TZ=Europe/Zurich \
   -h pbs \
-  -v /sharedfolders/dockerdata/lab/pbs/backup:/mnt/backup \
-  -v /sharedfolders/dockerdata/lab/pbs/config/etc:/etc/proxmox-backup \
-  -v /sharedfolders/dockerdata/lab/pbs/config/log:/var/log/proxmox-backup \
-  -v /sharedfolders/dockerdata/lab/pbs/config/lib:/var/lib/proxmox-backup \
+  -v /path/to/data/backup:/mnt/backup \
+  -v /path/to/config/pbs/config/etc:/etc/proxmox-backup \
+  -v /path/to/config/pbs/config/log:/var/log/proxmox-backup \
+  -v /path/to/config/pbs/config/lib:/var/lib/proxmox-backup \
   --restart unless-stopped \
   ayufan/proxmox-backup-server:latest
 ```
