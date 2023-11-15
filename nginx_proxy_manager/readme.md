@@ -29,7 +29,7 @@ jc21/nginx-proxy-manager:latest
 ```shell
 wget https://raw.githubusercontent.com/Tontonjo/ngxin_proxy_manager/main/nginx_proxy_manager.yml
 ```  
-edit the yaml to match your environement
+Edit the yaml to match your environement  
 ```shell
 nano nginx_proxy_manager.yml
 ```  
@@ -42,3 +42,9 @@ Navigate to http://hostname_ip:81
 Default login:  
 Email:    admin@example.com  
 Password: changeme  
+
+## Other commands  
+### Remove a certbot lock - run in container  
+```shell
+find / -type f -name ".certbot.lock" -exec rm {} \;
+```  
