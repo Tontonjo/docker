@@ -29,6 +29,14 @@ nano /usr/lib/systemd/system/fail2ban.service
 ```ssh
 After=network.target iptables.service firewalld.service ip6tables.service ipset.service nftables.service docker.service
 ```
+If you dont want to deal with the fail2ban service for any reason, you can add a delay to the action.d file
+```ssh
+actionstart = sleep 30
+              iptables -N f2b-npm-docker
+              iptables -A f2b-npm-docker -j RETURN
+              iptables -I FORWARD -p tcp -m multiport --dports 0:65535 -j f2b-npm-docker
+```
+
 
 ## Installation IN container
 ####  Preparation
@@ -76,6 +84,10 @@ nano /init
 ```ssh
 service fail2ban start
 ```
+## Test!
+Use the following management commands to ban yourself:
+- check that your NPM services are not accessible anymore
+- Reboot your server and ensure they are still not accessible :)
 
 ## Management
 ### List jails
