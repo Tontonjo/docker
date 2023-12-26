@@ -24,8 +24,9 @@ Edit your container configuration to set the following:
 /path/to/npm/fail2ban:/etc/fail2ban
 /path/to/npm/fail2ban/database:/var/lib/fail2ban
 ```
+## Installation OUT of container
 
-## Installation
+## Installation IN container
 Log into your Nginx proxy manager container:
 ```ssh
 docker exec -it $nginxproxymanagercontainer bash
@@ -34,7 +35,7 @@ install fail2ban
 ```ssh
 apt-get update && apt-get install -y fail2ban nano
 ```
-- Your folder /path/to/npm/fail2ban shoudl now contain all default jails
+- Your folder /path/to/npm/fail2ban should now contain all default jails
 disable ssh default jail as it is useless by setting sshd jail to false
 ```ssh
 nano /etc/fail2ban/jail.d/defaults-debian.conf
@@ -44,6 +45,8 @@ nano /etc/fail2ban/jail.d/defaults-debian.conf
 enabled = false
 ```
 Copy my fail2ban configurations in respective folders jail.d and filter.d
+- Use npm-docker.local
+
 Start the service:
 ```ssh
 service fail2ban start
