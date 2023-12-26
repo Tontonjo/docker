@@ -10,6 +10,7 @@
 https://nginxproxymanager.com/  
 https://github.com/NginxProxyManager/nginx-proxy-manager/issues/39  
 https://forum.openmediavault.org/index.php?thread/49562-nginx-proxy-manager-with-fail2ban-guide/  
+https://gist.github.com/Rankarusu/23a04ed587b05c6f2b701f2457a127b0  
 
 
 ## Installation OUT of container (on host)
