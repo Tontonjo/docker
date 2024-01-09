@@ -23,6 +23,7 @@ Copy my fail2ban configurations in respective folders action.d, jail.d and filte
 - Edit path to match your environement
 
 #### Set fail2ban service dependency to wait for docker (necessary to ensure fail2ban rules get in first position)
+!! this probably has to be done every major update !!
 Add docker.service to fail2ban.service configuration
 ```ssh
 nano /usr/lib/systemd/system/fail2ban.service
