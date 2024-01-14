@@ -1,8 +1,8 @@
 
-## Sources:
-https://hub.docker.com/r/ahaen/azuread-ldap-wrapper
-https://github.com/ahaenggli/AzureAD-LDAP-wrapper
-https://ahaenggli.github.io/AzureAD-LDAP-wrapper/installation/create-azuread-application/
+## Sources:  
+https://hub.docker.com/r/ahaen/azuread-ldap-wrapper  
+https://github.com/ahaenggli/AzureAD-LDAP-wrapper  
+https://ahaenggli.github.io/AzureAD-LDAP-wrapper/installation/create-azuread-application/  
 
 ```shell
 docker run -d \
