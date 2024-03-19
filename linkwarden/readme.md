@@ -6,5 +6,5 @@
 [Linkwarden Website](https://linkwarden.app/)  
 
 ```ssh
-docker compose up -p linkwarden -f linkwarden.yml -d
+docker-compose -p linkwarden -f linkwarden.yml up -d
 ```
