@@ -1,0 +1,25 @@
+# Tonton Jo - 2020
+# Join me on Youtube: https://www.youtube.com/channel/UCnED3K6K5FDUp-x_8rwpsZw
+
+server {
+listen 80;
+
+server_name your.domain.fqdn; 
+
+# Force HTTPS:
+#return 301 https://$server_name$request_uri; 
+
+ location / {
+	proxy_pass http://target:port/;
+        }
+}
+
+#server {
+#listen 443 ssl;
+
+#server_name your.domain.fqdn;
+
+# location / {
+#	proxy_pass http://target:port/;
+#        }
+#		}
