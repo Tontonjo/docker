@@ -4,7 +4,7 @@
 [Social links](https://linktr.ee/tontonjo)  
 
 ## Usefull Links: 
-[Flaresolverr Repository ](https://github.com/FlareSolverr/FlareSolverr)  
+[Github Remotely]([https://github.com/FlareSolverr/FlareSolverr](https://github.com/immense/Remotely))  
 
 ## Other infos
 
