@@ -6,9 +6,6 @@
 ## Usefull Links: 
 [Github Nativefier](https://github.com/nativefier/nativefier  )  
 
-## Alternative: 
-[Handbrake](https://www.youtube.com/watch?v=dkpm3dGTi-I)
-
 ## Other infos
 
 ## Commands:
