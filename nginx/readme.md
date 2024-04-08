@@ -1,4 +1,4 @@
-# Deluge VPN
+# Nginx
 
 ## Tonton Jo
 [Social links](https://linktr.ee/tontonjo)  
