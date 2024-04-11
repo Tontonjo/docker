@@ -16,15 +16,19 @@ echo $secret
 ```  
 Use this password to set FF_SYNCSERVER_SECRET in the docker run command:
 ```shell
-docker run -d -p 5000:5000 --name ffsync \
-  -e TZ="Europe/Paris" \
-  -e PUID=1000 \
-  -e PGID=100 \
-  -e FF_SYNCSERVER_SECRET="$secret" \
-  -e FF_SYNCSERVER_FORWARDED_ALLOW_IPS=* \
-  -e FF_SYNCSERVER_PUBLIC_URL=http://fqdn.to.server:5000 \
-  -v /path/to/ffsync/:/data \
-  crazymax/firefox-syncserver:latest
+ docker run -d \
+    -p 5000:5000 \
+	--name ffsyncserver \
+	--restart unless-stopped \
+    -e SYNCSERVER_PUBLIC_URL=http://yourdomain:5000 \
+    -e SYNCSERVER_SECRET=<insertsecrethere> \
+    -e SYNCSERVER_SQLURI=sqlite:////data/syncserver.db \
+	  -v /path/to/data:/data \
+    -e SYNCSERVER_BATCH_UPLOAD_ENABLED=true \
+    -e SYNCSERVER_FORCE_WSGI_ENVIRON=false \
+    -e SYNCSERVER_DEBUG_ENABLED=true \
+    -e PORT=5000 \
+	mozilla/syncserver:latest
   ``` 
 ## Firefox configuration:
 enter this url in firefox: about:config  
