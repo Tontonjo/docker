@@ -113,3 +113,10 @@ fail2ban-client set npm-docker unbanip $anip
 sqlite3 -header -column 'file:/var/lib/fail2ban/fail2ban.sqlite3?mode=ro' "select * from bans where jail='npm-docker' AND ip='$ipaddress' order by timeofban desc limit 10"
 ```
 
+## Debugging:
+### Fail2ban Regex
+You can test your regex against actual logs or sample ones with this command:
+```ssh
+fail2ban-regex "/path/to/log.txt" "/etc/fail2ban/filter.d/npm-docker.conf" --print-all-matched
+```
+
