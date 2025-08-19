@@ -119,4 +119,11 @@ You can test your regex against actual logs or sample ones with this command:
 ```ssh
 fail2ban-regex "/path/to/log.txt" "/etc/fail2ban/filter.d/npm-docker.conf" --print-all-matched
 ```
-
+### If an ip got banned by mistake you can try to identify why by obtaining a list of the lines containing IP's
+```ssh
+grep $IPADDRESS "/path/to/logs/*.log" > log.txt
+```
+### If the case is old you can look into archives
+```ssh
+zgrep $IPADDRESS "/path/to/logs/*.gz" > log.txt
+```
